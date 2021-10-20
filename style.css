@@ -99,3 +99,45 @@ header {
   border-bottom-left-radius: 0;
   border-left: none;
 }
+
+.desktop-image {
+  display: none;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  header {
+    justify-content: flex-start;
+    margin-bottom: 100px;
+  }
+
+  .hero {
+    display: none;
+  }
+
+  body {
+    display: flex;
+    background-image: url('/img/destop-bg.png');
+    background-size: cover;
+  }
+
+  .all-container {
+    width: 50%;
+  }
+
+  .all-container .text-container {
+    text-align: left;
+  }
+
+  .text-container > h2 {
+    font-size: 64px;
+  }
+
+  .desktop-image {
+    display: block;
+    background-image: url('/img/hero.png');
+    background-size: cover;
+    width: 50%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 28% 100%);
+  }
+}
